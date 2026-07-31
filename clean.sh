@@ -70,10 +70,10 @@ install -Dm644 keepers /var/lib/debfoster/keepers
 
 debfoster --force
 
-apt --fix-broken install
+apt --fix-broken install -y
 
 apt-get autoremove --purge -y
-apt-get clean
+apt-get clean -y
 
 apt-get update -y 
 apt-get upgrade -y
