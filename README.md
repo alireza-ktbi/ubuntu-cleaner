@@ -1,6 +1,6 @@
 # ubuntu-cleaner
 
-### make ready ubuntu server as a docker-only host 
+### make ready ubuntu server as a docker-only host
 
 how to use: 
 ```

@@ -37,6 +37,7 @@ apt-mark manual \
     docker-compose-plugin \
     docker-ce-rootless-extras \
     python3 \
+    cron \
     rsyslog
 
 
