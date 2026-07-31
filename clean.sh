@@ -70,4 +70,8 @@ debfoster --force
 apt-get autoremove --purge -y
 apt-get clean
 
+apt-get update -y 
+apt-get upgrade -y
+
+
 reboot
