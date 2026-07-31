@@ -35,6 +35,7 @@ apt-mark manual \
     containerd.io \
     docker-buildx-plugin \
     docker-compose-plugin \
+    docker-ce-rootless-extras \
     python3 \
     rsyslog
 
@@ -54,7 +55,7 @@ while true; do
 done
 
 
-apt purge snapd
+apt purge -y snapd
 rm -rf /snap
 rm -rf /var/snap
 rm -rf ~/snap

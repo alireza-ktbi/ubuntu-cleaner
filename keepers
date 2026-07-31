@@ -38,7 +38,6 @@ python3-minimal
 rsyslog
 sed
 systemd
-systemd-resolved
 systemd-sysv
 systemd-timesyncd
 tar
@@ -46,7 +45,6 @@ containerd.io
 udev
 util-linux
 wget
-vmtools
 libsystemd0
 libpam-systemd
 libnss-systemd
@@ -59,3 +57,11 @@ gnupg
 open-vm-tools
 netbase
 gawk
+tmux
+htop
+bash-completion
+command-not-found
+python3-systemd
+ssh-import-id
+tcpdump
+telnet
