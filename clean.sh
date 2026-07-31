@@ -15,11 +15,14 @@ apt update -y
 apt install -y debfoster tmux htop ca-certificates curl vim
 apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+apt purge -y unattended-upgrades
+
 apt autoremove -y --purge 
 apt clean -y
 
 
 apt-mark manual \
+    debfoster \
     openssh-server \
     openssh-client \
     iproute2 \
@@ -66,6 +69,8 @@ install -Dm644 debfoster.conf /etc/debfoster.conf
 install -Dm644 keepers /var/lib/debfoster/keepers
 
 debfoster --force
+
+apt --fix-broken install
 
 apt-get autoremove --purge -y
 apt-get clean
