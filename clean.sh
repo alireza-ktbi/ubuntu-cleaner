@@ -78,5 +78,6 @@ apt-get clean -y
 apt-get update -y 
 apt-get upgrade -y
 
+apt --fix-broken install -y
 
 reboot
